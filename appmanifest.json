@@ -1,10 +1,10 @@
 {
-	"name": "Fruit Slicing Example",
-	"short_name": "Fruit Slicing Example",
+	"name": "Alchemist Template",
+	"short_name": "Alchemist Template",
 	"description": "",
 	"start_url": "index.html",
 	"display": "fullscreen",
-	"orientation": "landscape",
+	"orientation": "any",
 	"background_color": "#ffffff",
 	"icons": [
 		{
