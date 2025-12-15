@@ -37,7 +37,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Exps.random,
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Text.Acts.MoveToTop,
-		C3.Plugins.Button.Cnds.OnClicked,
+		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.Browser.Acts.RequestFullScreen,
 		C3.Plugins.System.Acts.Wait
 	];
@@ -56,6 +56,7 @@ self.C3_JsPropNameTable = [
 	{Sprite: 0},
 	{Browser: 0},
 	{Touch: 0},
+	{Sprite2: 0},
 	{SecondsPerObstacle: 0},
 	{JumpStrength: 0},
 	{SCROLLSPEED: 0},
@@ -73,5 +74,6 @@ self.InstanceType = {
 	ScoreText: class extends self.ITextInstance {},
 	Sprite: class extends self.ISpriteInstance {},
 	Browser: class extends self.IInstance {},
-	Touch: class extends self.IInstance {}
+	Touch: class extends self.IInstance {},
+	Sprite2: class extends self.ISpriteInstance {}
 }
