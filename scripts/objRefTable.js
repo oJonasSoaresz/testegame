@@ -10,6 +10,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Flash,
 		C3.Plugins.TiledBg,
 		C3.Plugins.DrawingCanvas,
+		C3.Plugins.Browser,
+		C3.Plugins.Touch.Cnds.OnTapGesture,
+		C3.Plugins.Browser.Cnds.IsFullscreen,
+		C3.Plugins.Browser.Acts.RequestFullScreen,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.SetTimescale,
 		C3.Plugins.System.Acts.SetObjectTimescale,
@@ -92,6 +96,7 @@ self.C3_JsPropNameTable = [
 	{FireParticles: 0},
 	{DrawingCanvas: 0},
 	{SliceText: 0},
+	{Browser: 0},
 	{FirstInteraction: 0},
 	{DOUBLESPAWNRATE: 0},
 	{BOMBSPAWNRATE: 0},
@@ -124,5 +129,6 @@ self.InstanceType = {
 	Fade: class extends self.ITiledBackgroundInstance {},
 	FireParticles: class extends self.IParticlesInstance {},
 	DrawingCanvas: class extends self.IDrawingCanvasInstance {},
-	SliceText: class extends self.ITextInstance {}
+	SliceText: class extends self.ITextInstance {},
+	Browser: class extends self.IInstance {}
 }
